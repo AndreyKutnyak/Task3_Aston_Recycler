@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Task3_Aston_Recycler</string>
+    <string name="toastEmptyAddContact">Пожалуйста, заполните все поля</string>
+    <string name="ContactNotFound">Контакт не найден</string>
+</resources>
