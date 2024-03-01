@@ -37,9 +37,6 @@ class AddContactActivity : AppCompatActivity() {
         if (firstName.isNotEmpty() && lastName.isNotEmpty() && phoneNumber.isNotEmpty()) {
             ContactRepository.addContact(firstName, lastName, phoneNumber)
 
-            // Уведомляем адаптер о изменениях
-
-
             finish()
         } else {
             Toast.makeText(this, getString(R.string.toastEmptyAddContact), Toast.LENGTH_SHORT).show()

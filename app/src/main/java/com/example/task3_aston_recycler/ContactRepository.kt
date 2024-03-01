@@ -11,7 +11,6 @@ object ContactRepository {
         contactAdapter = adapter
     }
 
-
     private fun notifyAdapterDataSetChanged() {
         contactAdapter?.submitList(contactsList.toList())
     }
@@ -39,6 +38,8 @@ object ContactRepository {
             existingContact.firstName = firstName
             existingContact.lastName = lastName
             existingContact.phoneNumber = phoneNumber
+            val position = contactsList.indexOf(existingContact)
+            contactAdapter?.notifyItemChanged(position)
         }
     }
 
